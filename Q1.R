@@ -262,5 +262,3 @@ boxplot(Resid~Yes.No,data=data2, main="t-test Residual Values",
 wilcox.test(data2$PSR~data2$Yes.No)
 
 wilcox.test(data2$Resid~data2$Yes.No)
-
-[Markdown file for this script](http://rpubs.com/laurenkleine96/286781)
