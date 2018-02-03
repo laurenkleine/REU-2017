@@ -14,9 +14,7 @@ unique(as.vector(GMPD_main$HostCorrectedName[grep("No",as.character(GMPD_main$Na
 #stored species list in "list"
 list <- unique(as.vector(GMPD_main$HostCorrectedName[grep("No",as.character(GMPD_main$NativeRange))]))
 
-#I still do not understand this code
-grep(paste(list,collapse="|"),as.character(GMPD_main$HostCorrectedName))
-
+#invasives
 I <- grep(paste(list,collapse="|"),as.character(GMPD_main$HostCorrectedName))
 
 invasives <- GMPD_main[I,]
